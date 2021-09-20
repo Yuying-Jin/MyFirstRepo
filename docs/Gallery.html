@@ -9,6 +9,8 @@
                 margin-bottom: 0px;
                 margin-right: 20px;
                 margin-left: 20px;
+                resize: horizontal;
+                overflow:auto;
             }
             h1 {
                 font-family: consolas;
@@ -16,23 +18,23 @@
                 background: rgb(134, 134, 134);
                 padding: 70px;
             }
-            div.gallery {
+            figure {
                 background-color: lightgrey;
                 width: 400px;
                 border: 1px solid #ccc;
                 float: left;
                 padding: 20px;
                 margin: 20px;
+                box-shadow: 1px 1px 15px grey;
             }
-            div.desc {
+            figcaption {
                 padding: 15px;
                 text-align: center;
-            }
-            [class|=desc] {
                 background: lightgrey;
                 border: 3px groove #eee;
             }
-            ul {
+
+            nav ul {
                 list-style-type: none;
                 margin-top: -50px;
                 padding: 5px;
@@ -40,10 +42,10 @@
             
                 background-color: rgb(255, 223, 123)
             }
-            li {
+            nav li {
                 float: left;
             }
-            li a {
+            nav li a {
                 color: white;
                 text-align: center;
                 font-size: 20px;
@@ -65,12 +67,16 @@
             }
             a:active {
                 color: blue;
-            }</style>
+            }
+            
+        
+        
+        </style>
     </head>
     <!-- This is a comment. -->
     <body>
         <h1>Hello <strong>World!</strong></h1>
-        <ul>
+        <nav><ul>
             <li>
                 <a href="index.html"> Home </a>
             </li>
@@ -82,23 +88,27 @@
                     <b>Gallery</b>
                 </a>
             </li>
-        </ul>
+        </ul></nav>
         <hr>
         <!-- content -->
         <p>This is my <q>gallery page</q>.</p>
-        <div class="gallery">
-            <img title="water" src="water.png" alt="" width="400" height="225">
-            <div class="desc">This is my desktop background.</div>
-        </div>
-        <div class="gallery">
+        <figure>
+            <img title="water" src="water.png" alt="water" width="400" height="225">
+            <figcaption>This is my desktop background.</figcaption>
+        </figure>
+        <figure>
             <video title="scared face" width="400" controls>
                 <source src="face.mp4" type="video/mp4"> Your browser does not support HTML video. </video>
-            <div class="desc">This is a scared face.</div>
-        </div>
-        <div class="gallery">
+            <figcaption>This is a scared face.</figcaption>
+        </figure>
+        <figure>
             <video title="colorful texts" width="400" controls>
                 <source src="text.mp4" type="video/mp4"> Your browser does not support HTML video. </video>
-            <div class="desc">Some colorful texts.</div>
-        </div>
+            <figcaption>Some colorful texts.</figcaption>
+        </figure>
+        <figure></figure>
     </body>
 </html>
+
+
+

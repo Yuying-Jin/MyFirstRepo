@@ -1,0 +1,28 @@
+start=root
+root = element xml {source, \text}
+
+source = element source{title, altTitle, author, pubPlace, publisher, date, note}
+title = element title{level,text}
+level = attribute level{xsd:Name}
+altTitle = element altTitle{xsd:NCName}
+author = element author{text}
+pubPlace = element pubPlace{where,text}
+where = attribute where{xsd:NCName}
+publisher = element publisher{text}
+date = element date{when,text}
+when = attribute when{xsd:gYear}
+note = element note{text}
+
+\text = element \text{poem*}
+poem = element poem {id, title,lineGroup*}
+id = attribute id{"harlem"|"goodMorning"|empty}
+lineGroup = element lineGroup{line*, empty}
+line = element line {n,mixed{(motif|emph|placeName|place|empty)}*}
+n=attribute n{xsd:integer}
+emph = element emph{text}
+placeName = element placeName{ref,text}
+place = element place{type?,ref,text}
+ref = attribute ref{"NYC-Harlem"|"NYC-Man"| "NYC-PennSt"| "PR"| "Cuba"| "Ga"|"NYC"|"Fla"|"La"|"NYC-Brook"|"NYC-Man"|"NYC-PennSt"|text}
+type = attribute type{"trainStat"|text}
+motif = element motif{text,empty}
+
