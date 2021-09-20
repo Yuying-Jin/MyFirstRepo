@@ -1,0 +1,45 @@
+datatypes xsd = "http://www.w3.org/2001/XMLSchema-datatypes"
+
+start = root
+root = element TEI {xml, teiHeader, textElement}
+xml = attribute xml{"http://www.tei-c.org/ns/1.0"|text}
+teiHeader = element teiHeader{fileDesc}
+fileDesc = element fileDesc{titleStmt, publicationStmt,sourceDesc}
+titleStmt = element titleStmt{title, author}
+title = element title{text}
+author = element author{text}
+publicationStmt = element publicationStmt{p}
+p = element p{text}
+sourceDesc = element sourceDesc{msDesc}
+msDesc = element msDesc{msIdentifier}
+msIdentifier = element msIdentifier{repository,idno}
+repository = element repository{empty}
+idno = element idno{xsd:integer}
+
+textElement = element text{front,body}
+front = element front{divElement+,empty}
+divElement = element div{type, listRef*, listWit*, text}
+type = attribute type{"references"|"witness"|text}
+listRef = element listRef{ptr+}
+ptr = element ptr{target+,empty}
+target = attribute target{"xml/fs606.xml"|"img/606/fs606.jpg"|"img/606/fs606-Map.jpg"|"img/606/606ce.jpg"|"img/606/606ce-Map.jpg"|"img/606/606CP.jpg"|"img/606/606CP-Map.jpg"|"img/606/606fh.jpg"|"img/606/606fh-Map.jpg"|text}
+
+listWit = element listWit{witness+}
+witness = element witness{bibl, xmlid}
+xmlid = attribute xml:id{"df6"|"CP"|"ce"|"fh"|text}
+bibl = element bibl{title, author, (editor, pubPlace, publisher,date)?}
+editor = element editor{text}
+pubPlace = element pubPlace{xsd:NCName}
+publisher = element publisher{text}
+date = element date{xsd:gYear}
+
+body = element body{head,lg+}
+head = element head{title}
+lg = element lg{l+}
+l = element l{n, (app*|text)+}
+n = attribute n{xsd:integer}
+
+app = element app{rdg+}
+rdg = element rdg{wit,text}
+wit = attribute wit{"#df6 #CP #fh"|"#ce"|text}
+

@@ -13,7 +13,7 @@ date = element date{when,text}
 when = attribute when{xsd:gYear}
 note = element note{text}
 
-\text = element \text{poem*}
+\text = element \text{poem+}
 poem = element poem {id, title,lineGroup*}
 id = attribute id{"harlem"|"goodMorning"|empty}
 lineGroup = element lineGroup{line*, empty}
