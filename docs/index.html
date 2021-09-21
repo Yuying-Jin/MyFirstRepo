@@ -9,37 +9,50 @@
                 margin-bottom: 0px;
                 margin-right: 20px;
                 margin-left: 20px;
+                resize: horizontal;
+                overflow: auto;
             }
             h1 {
                 font-family: consolas;
                 font-size: 60px;
                 background: rgb(134, 134, 134);
-                padding: 70px;
+                padding: 50px;
+                padding-top: 70px;
+                padding-bottom: 70px;
             }
-            div {
+            figure {
                 background-color: lightgrey;
                 width: 400px;
-                border: lightgrey;
-                padding: 50px;
+                border: 1px solid #ccc;
+                float: left;
+                padding: 20px;
                 margin: 20px;
+                box-shadow: 1px 1px 15px grey;
             }
-            ul {
+            figcaption {
+                padding: 15px;
+                text-align: center;
+                background: lightgrey;
+                border: 3px groove #eee;
+            }
+            
+            nav ul {
                 list-style-type: none;
                 margin-top: -50px;
                 padding: 5px;
                 overflow: hidden;
-
+            
                 background-color: rgb(255, 223, 123)
             }
-            li {
+            nav li {
                 float: left;
             }
-            li a {
+            nav li a {
                 color: white;
                 text-align: center;
                 font-size: 20px;
                 padding: 50px 50px;
-                text-decoration:none;
+                text-decoration: none;
             }
             li a:hover {
                 background-color: rgb(232, 187, 76);
@@ -56,33 +69,80 @@
             }
             a:active {
                 color: blue;
+            }
+            term-exp {
+                padding: 10px;
+                display: none;
+                color: black;
+                background: white;
+                width: 30%;
+                position: absolute;
+                text-align: center;
+            }
+            term- {
+                font-style: italic;
+                color: tomato;
+            }
+            term-:hover {
+                font-weight: bold;
+            }
+            term-:hover + term-exp {
+            
+                display: block;
+            }
+            term-exp:hover {
+                display: block;
+            }
+            .smallText {
+                font-size: 1%;
+                color: rgb(144, 144, 144);
             }</style>
     </head>
     <!-- This is a comment. -->
     <body>
-        <h1>Hello <strong>World!</strong></h1>
-        <ul>
-            <li>
-                <a>
-                    <b>Home</b>
-                </a>
-            </li>
-            <li>
-                <a href="About.html">About</a>
-            </li>
-            <li>
-                <a href="Gallery.html"> Gallery </a>
-            </li>
-        </ul>
+        <h1>MyFirstRepo Website</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a>
+                        <b>Home</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="About.html">About</a>
+                </li>
+                <li>
+                    <a href="Gallery.html"> Gallery </a>
+                </li>
+            </ul>
+        </nav>
         <hr>
-        <!-- content -->
+        <!-- content -->  
         <div>
             <pre style="font-size:30px"><strong>Welcome</strong> to my <strong>website</strong>!</pre>
             <!-- THis is a video. -->
+            <h2>A video below!</h2>
             <video width="400" controls>
                 <source src="video1.mp4" type="video/mp4"> Your browser does not support HTML
                 video. </video>
             <p> Video courtesy of myself. </p>
+            <br />
         </div>
+        <h3>I am trying to build my website</h3>
+        <div>How can I design a cool website?<del>
+                <br /><small>It is too hard.</small>
+                <br /><small>I wanna go to eat.</small></del>
+            <div class="smallText"><del>My bed is calling me.</del></div>
+            <br /> Perhaps I can learn about differnt kinds of <term->Text Formatting
+                Elements</term->. <term-exp>For defining text with a special meaning. <a
+                    href="https://www.w3schools.com/html/html_formatting.asp"><small>Leran
+                        more</small></a></term-exp> (Hover the <term- style="color:black;"
+                    ><i>italic</i></term-> text) <term-exp>Not this! I mean the red text.</term-exp>
+            <br /> Or search more <term->html exampls</term->. <term-exp><a
+                    href="https://www.w3schools.com/html/html_examples.asp">click
+            me!</a></term-exp></div>
+        <br />
+        <br />
+        <h3>Yeah!</h3>
     </body>
 </html>

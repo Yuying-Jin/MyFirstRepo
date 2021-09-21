@@ -9,6 +9,8 @@
                 margin-bottom: 0px;
                 margin-right: 20px;
                 margin-left: 20px;
+                resize: horizontal;
+                overflow:auto;
             }
             h1 {
                 font-family: consolas;
@@ -16,30 +18,39 @@
                 background: rgb(134, 134, 134);
                 padding: 70px;
             }
-            div {
+            figure {
                 background-color: lightgrey;
                 width: 400px;
-                border: lightgrey;
-                padding: 50px;
+                border: 1px solid #ccc;
+                float: left;
+                padding: 20px;
                 margin: 20px;
+                box-shadow: 1px 1px 15px grey;
             }
-            ul {
+            figcaption {
+                padding: 15px;
+                text-align: center;
+                background: lightgrey;
+                border: 3px groove #eee;
+            }
+
+            nav ul {
                 list-style-type: none;
                 margin-top: -50px;
                 padding: 5px;
                 overflow: hidden;
-
+            
                 background-color: rgb(255, 223, 123)
             }
-            li {
+            nav li {
                 float: left;
             }
-            li a {
+            nav li a {
                 color: white;
                 text-align: center;
                 font-size: 20px;
                 padding: 50px 50px;
-                text-decoration:none;
+                text-decoration: none;
             }
             li a:hover {
                 background-color: rgb(232, 187, 76);
@@ -56,13 +67,14 @@
             }
             a:active {
                 color: blue;
-            }</style>
+            }
+        </style>
     </head>
     <!-- This is a comment. -->
     <body>
-        <h1>Hello <strong>World!</strong></h1>
-        <ul>
-            <li>
+        <h1>MyFirstRepo Website</h1>
+        <nav><ul>
+            <li> 
                 <a href="index.html">
                     Home
                 </a>
@@ -71,9 +83,9 @@
                 <a><b>About</b></a>
             </li>
             <li>
-                <a href="Gallery.html"> Gallery </a>
+                <a href="gallery.html"> Gallery </a>
             </li>
-        </ul>
+        </ul></nav>
         <hr>
         <!-- content -->
         <p>This is my <q>about page</q>.</p>
