@@ -2,81 +2,12 @@
 <html>
     <head>
         <title>Gallery page</title>
-        <style>
-            body {
-                background-color: rgb(232, 232, 232);
-                margin-top: -50px;
-                margin-bottom: 0px;
-                margin-right: 20px;
-                margin-left: 20px;
-                resize: horizontal;
-                overflow:auto;
-            }
-            h1 {
-                font-family: consolas;
-                font-size: 60px;
-                background: rgb(134, 134, 134);
-                padding: 70px;
-            }
-            figure {
-                background-color: lightgrey;
-                width: 400px;
-                border: 1px solid #ccc;
-                float: left;
-                padding: 20px;
-                margin: 20px;
-                box-shadow: 1px 1px 15px grey;
-            }
-            figcaption {
-                padding: 15px;
-                text-align: center;
-                background: lightgrey;
-                border: 3px groove #eee;
-            }
-
-            nav ul {
-                list-style-type: none;
-                margin-top: -50px;
-                padding: 5px;
-                overflow: hidden;
-            
-                background-color: rgb(255, 223, 123)
-            }
-            nav li {
-                float: left;
-            }
-            nav li a {
-                color: white;
-                text-align: center;
-                font-size: 20px;
-                padding: 50px 50px;
-                text-decoration: none;
-            }
-            li a:hover {
-                background-color: rgb(232, 187, 76);
-                color: white;
-            }
-            a:link {
-                color: white;
-            }
-            a:visited {
-                color: brown;
-            }
-            a:hover {
-                color: wheat;
-            }
-            a:active {
-                color: blue;
-            }
-            
-        
-        
-        </style>
+        <link type="text/css" href="style.css" rel="stylesheet" />
     </head>
     <!-- This is a comment. -->
     <body>
-        <h1>MyFirstRepo Website</h1> 
-        <nav><ul>
+        <header>MyFirstRepo Website</header> 
+        <nav><ul class="menu">
             <li>
                 <a href="index.html"> Home </a>
             </li>
@@ -93,8 +24,9 @@
         <!-- content -->
         <p>This is my <q>gallery page</q>.</p>
         <figure>
-            <img title="water" src="water.png" alt="water" width="400" height="225">
-            <figcaption>This is my desktop background.</figcaption>
+            <video title="colorful texts" width="400" controls>
+                <source src="video1.mp4" type="video/mp4"> Your browser does not support HTML video. </video>
+            <figcaption>Wave.</figcaption>
         </figure>
         <figure>
             <video title="scared face" width="400" controls>
@@ -106,6 +38,9 @@
                 <source src="text.mp4" type="video/mp4"> Your browser does not support HTML video. </video>
             <figcaption>Some colorful texts.</figcaption>
         </figure>
+        
+        <div class = "footer-line"></div>
+        <footer class="container"><div  class="bottomRight">© 2021 Yuying Jin</div></footer>
     </body>
 </html>
 
