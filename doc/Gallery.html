@@ -3,6 +3,138 @@
     <head>
         <title>Gallery page</title>
         <link type="text/css" href="style.css" rel="stylesheet" />
+        body {
+    background-color: rgb(232, 232, 232);
+    margin-top: -20px;
+    margin-bottom: 0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    resize: horizontal;
+    overflow: auto;
+}
+header {
+    font-family: consolas;
+    font-size: 60px;
+    background: rgb(134, 134, 134);
+    padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 50px;
+}
+footer {
+    background: rgb(134, 134, 134);
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    font-size: 5px;
+    color: lightgrey;
+    overflow:auto;
+} 
+.footer-line{
+    background-color: rgb(255, 223, 123);
+    height:20px;
+    width:100%;
+    overflow:auto;
+}
+.container{
+    position: relative;   
+}
+.bottomRight{
+    position:absolute;
+    bottom:8px;
+    right:16px;
+}
+/* image */
+figure {
+    background-color: lightgrey;
+    width: 400px;
+    border: 1px solid #ccc;
+    /* word-break: break-all; */
+    padding: 20px;
+    /* margin:auto; */
+    float:left;
+    margin:20px;
+    box-shadow: 1px 1px 15px grey;
+}
+.text{
+    width: 50%;    
+    float: left;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+figcaption {
+    padding: 15px;
+    text-align: center;
+    background: lightgrey;
+    border: 3px groove #eee;
+}
+/* navigation */
+nav ul.menu {
+    list-style-type: none;
+    margin-top: -50px;
+    padding: 5px;
+    overflow: hidden;
+    background-color: rgb(255, 223, 123)
+}
+nav li {
+    float: left;
+}
+nav li a {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 50px 50px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(232, 187, 76);
+    color: white;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: brown;
+}
+a:hover {
+    color: wheat;
+}
+a:active {
+    color: blue;
+}
+/* term block */
+term-exp {
+    padding: 10px;
+    display: none;
+    color: black;
+    background: white;
+    width: 30%;
+    position: absolute;
+    text-align: center;
+}
+term- {
+    
+    color: tomato;
+}
+term-:hover {
+    text-decoration: underline;
+}
+term-:hover + term-exp {
+    display: block;
+}
+term-exp:hover {
+    display: block;
+}
+.smallText {
+    font-size: 1%;
+    color: rgb(144, 144, 144);
+}
     </head>
     <!-- This is a comment. -->
     <body>
