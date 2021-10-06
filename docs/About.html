@@ -2,94 +2,42 @@
 <html>
     <head>
         <title>About page</title>
-        <style>
-            body {
-                background-color: rgb(232, 232, 232);
-                margin-top: -50px;
-                margin-bottom: 0px;
-                margin-right: 20px;
-                margin-left: 20px;
-                resize: horizontal;
-                overflow:auto;
-            }
-            h1 {
-                font-family: consolas;
-                font-size: 60px;
-                background: rgb(134, 134, 134);
-                padding: 70px;
-            }
-            figure {
-                background-color: lightgrey;
-                width: 400px;
-                border: 1px solid #ccc;
-                float: left;
-                padding: 20px;
-                margin: 20px;
-                box-shadow: 1px 1px 15px grey;
-            }
-            figcaption {
-                padding: 15px;
-                text-align: center;
-                background: lightgrey;
-                border: 3px groove #eee;
-            }
-
-            nav ul {
-                list-style-type: none;
-                margin-top: -50px;
-                padding: 5px;
-                overflow: hidden;
-            
-                background-color: rgb(255, 223, 123)
-            }
-            nav li {
-                float: left;
-            }
-            nav li a {
-                color: white;
-                text-align: center;
-                font-size: 20px;
-                padding: 50px 50px;
-                text-decoration: none;
-            }
-            li a:hover {
-                background-color: rgb(232, 187, 76);
-                color: white;
-            }
-            a:link {
-                color: white;
-            }
-            a:visited {
-                color: brown;
-            }
-            a:hover {
-                color: wheat;
-            }
-            a:active {
-                color: blue;
-            }
-        </style>
+        <link type="text/css" href="style.css" rel="stylesheet" />
     </head>
     <!-- This is a comment. -->
     <body>
-        <h1>MyFirstRepo Website</h1>
-        <nav><ul>
-            <li> 
-                <a href="index.html">
-                    Home
-                </a>
-            </li>
-            <li>
-                <a><b>About</b></a>
-            </li>
-            <li>
-                <a href="gallery.html"> Gallery </a>
-            </li>
-        </ul></nav>
+        <header>MyFirstRepo Website</header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="index.html"> Home </a>
+                </li>
+                <li>
+                    <a>
+                        <b>About</b>
+                    </a>
+                </li>
+                <li>
+                    <a href="gallery.html"> Gallery </a>
+                </li>
+            </ul>
+        </nav>
         <hr>
         <!-- content -->
-        <p>This is my <q>about page</q>.</p>
-        <p>Go back to <a href="index.html">Home</a> page</p>
-        <img src="water.png" alt="photo of water" width="600" height="400">
+        <div class="text"><p>This is my about page.</p>
+        <p>I am studying in computer science in Penn State Behrend. Also, I am interested in digital 
+            art very much, especially in making videos. In ART 168, I have tried many different
+            kinds of digital media, and I found they were difficult but amazing.  I often spent too
+            much time in one project and met many silly problems. Still, solving problems and
+            completing an artwork brought me the sense of achievement.</p>
+        <p>In 2017, when I watched good promotional videos, I felt excited, so I began to learn how
+            to make a video with Adobe After Effects. After one year, I started to make
+            promotional videos for songs, and they were published by others online. I also makes some short videos for practice.</p>
+            <p>Now I still work with others to make works together.</p>
+        </div>
+        <div class="footer-line"></div>
+        <footer class="container">
+            <div class="bottomRight">© 2021 Yuying Jin</div>
+        </footer>
     </body>
 </html>
