@@ -69,6 +69,10 @@ figcaption {
     background: lightgrey;
     border: 3px groove #eee;
 }
+img{
+    width:50%;
+}
+
 /* navigation */
 nav ul.menu {
     list-style-type: none;
