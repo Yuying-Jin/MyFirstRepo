@@ -55,7 +55,7 @@ figure {
     margin:20px;
     box-shadow: 1px 1px 15px grey;
 }
-.text{
+div.text{
     width: 50%;    
     float: left;
     margin: 10px;
@@ -70,7 +70,7 @@ figcaption {
     border: 3px groove #eee;
 }
 img{
-    width:50%;
+    width:70%;
 }
 
 /* navigation */
