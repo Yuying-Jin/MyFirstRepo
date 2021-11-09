@@ -134,3 +134,5 @@ term-exp:hover {
     font-size: 1%;
     color: rgb(144, 144, 144);
 }
+
+iframe { border: none; }
