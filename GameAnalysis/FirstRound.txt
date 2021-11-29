@@ -1,1 +1,10 @@
-This is a 3D game. Its settings are easy, and it is just one character type. In the game, the player, who lost the way in the universe, needed to operate the spacecraft to go back to the Earth. There is no NPC in the spacecraft. I explore alone in the spacecraft. I check each item and facility. In the process, I open the gate and fall out of the spaceship, so I have to restart the game. I can interact with gates, a trash bin,books, food, and drinks. Also, I can get the food and the drink from the specific mechine. Food and drinks are not important items, and they cannot help me to pass the game.Still, it is very interesting to fill the spacecraft with food and drinks and eat and drink them. Finally, I learn how to operate the console to find the way to the Earth. This game shows human’s yearning for the universe and dependence on the Earth. Although space journey is thrilling and interesting, we still return home on the earth sooner or later. 
+This is a 3D game. Its settings are easy, and it is just one character type. 
+In the game, the player, who lost the way in the universe, needed to operate the spacecraft to go back to the Earth. 
+There is no NPC in the spacecraft. I explore alone in the spacecraft. 
+I check each item and facility. In the process, I open the gate and fall out of the spaceship, so I have to restart the game. 
+I can interact with gates, a trash bin,books, food, and drinks. Also, I can get the food and the drink from the specific mechine. 
+Food and drinks are not important items, and they cannot help me to pass the game. 
+Still, it is very interesting to fill the spacecraft with food and drinks and eat and drink them. 
+Finally, I learn how to operate the console to find the way to the Earth. 
+This game shows human’s yearning for the universe and dependence on the Earth. 
+Although space journey is thrilling and interesting, we still return home on the earth sooner or later. 
