@@ -38,10 +38,10 @@ footer {
 .container{
     position: relative;   
 }
-.bottomRight{
+.bottomLeft{
     position:absolute;
     bottom:8px;
-    right:16px;
+    left:16px;
 }
 /* image */
 figure {
@@ -85,7 +85,7 @@ nav li {
     float: left;
 }
 nav li a {
-    color: white;
+    color: brown;
     text-align: center;
     font-size: 20px;
     padding: 50px 50px;
