@@ -13,6 +13,7 @@ h2{
 h3{
     margin-bottom: -5px;
 }
+i{font-size:small;}
 header {
     font-family: consolas;
     font-size: 60px;
@@ -85,10 +86,7 @@ img{
     display: block;
     border-radius: 8px;
     float:inherit;
-    padding:5px;
-    padding-bottom: 5px;
-
-
+    margin-bottom: -25px;
 }
 /* navigation */
 nav ul.menu {
