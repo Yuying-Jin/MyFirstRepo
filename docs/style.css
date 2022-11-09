@@ -1,12 +1,11 @@
 body {
     background-color: rgb(232, 232, 232);
-    margin-top: -20px;
-    margin-bottom: 0px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: -20px 20px 0px;
     resize: horizontal;
     overflow: auto;
     color:black;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
 }
 h2{
     margin-bottom: -5px;
@@ -19,20 +18,16 @@ header {
     font-family: consolas;
     font-size: 60px;
     background: rgb(134, 134, 134);
-    padding: 50px;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px 50px;
     margin-bottom: 50px;
 }
 footer {
     background: rgb(134, 134, 134);
     position:fixed;
-    left:0px;
+    left:0;
     bottom:0px;
     padding: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     font-size: 5px;
     color: lightgrey;
     overflow:auto;
@@ -159,7 +154,7 @@ iframe { border: none; }
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    transition-duration: 0.3s;
+
     cursor: pointer;
     background-color: rgb(255, 223, 123);
     color: black;
