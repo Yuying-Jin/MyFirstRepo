@@ -118,9 +118,6 @@ li a:hover {
 a:hover {
     color: wheat;
 }
-a:active {
-    color: blue;
-}
 /* term block */
 term-exp {
     padding: 10px;
