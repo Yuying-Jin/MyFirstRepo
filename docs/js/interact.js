@@ -15,6 +15,8 @@ function darkMode() {
     var footLine = document.getElementsByClassName("footer-line")[0]
     var button = document.getElementsByClassName("button")
     var hint = document.getElementsByClassName("darkHint")[0]
+    var li = document.getElementsByTagName("li")
+    var a = []
     var hr = document.getElementsByTagName("hr")
     body.style.color = "white"
     body.style.backgroundColor = "rgb(80, 80, 80)"
@@ -31,6 +33,12 @@ function darkMode() {
         hr[i].style.borderTop = "1px solid #eee"
         hr[i].style.borderBottom = "1px solid #999"
     }
+    for (var i = 0; i < li.length; i++) {
+        // get <a> inside <li>
+        // https://stackoverflow.com/questions/20830677/javascript-get-h2-tag-inside-li-tag-and-return-it
+        a = li[i].getElementsByTagName('a')[0];
+        a.style.color = "brown"
+    }
 
 }
 
@@ -42,6 +50,8 @@ function lightMode() {
     var footLine = document.getElementsByClassName("footer-line")[0]
     var button = document.getElementsByClassName("button")
     var hint = document.getElementsByClassName("darkHint")[0]
+    var li = document.getElementsByTagName("li")
+    var a = []
     var hr = document.getElementsByTagName("hr")
     body.style.color = "black"
     body.style.backgroundColor = "rgb(232, 232, 232)"
@@ -57,6 +67,11 @@ function lightMode() {
     for(var i = 0; i < hr.length; i++){
         hr[i].style.borderTop = "1px solid #999"
         hr[i].style.borderBottom = "1px solid #eee"
+    }
+    for (var i = 0; i < li.length; i++) {
+
+        a = li[i].getElementsByTagName('a')[0];
+        a.style.color = "brown"
     }
 }
 
@@ -124,8 +139,6 @@ function randMode(){
     if(menuCol.length < 14){
         var aCol = randLight()
         for (var i = 0; i < li.length; i++) {
-            // get <a> inside <li>
-            // https://stackoverflow.com/questions/20830677/javascript-get-h2-tag-inside-li-tag-and-return-it
             a = li[i].getElementsByTagName('a')[0];
             a.style.color = aCol
         }
@@ -133,8 +146,6 @@ function randMode(){
     else{
         var aCol = randDark()
         for (var i = 0; i < li.length; i++) {
-            // get <a> inside <li>
-            // https://stackoverflow.com/questions/20830677/javascript-get-h2-tag-inside-li-tag-and-return-it
             a = li[i].getElementsByTagName('a')[0];
             a.style.color = aCol
         }
