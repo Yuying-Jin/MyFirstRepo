@@ -106,6 +106,9 @@ nav li a {
 a:link{
     color: brown;
 }
+a:visited{
+    color: brown;
+}
 
 
 li a:hover {
