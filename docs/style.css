@@ -6,6 +6,7 @@ body {
     margin-left: 20px;
     resize: horizontal;
     overflow: auto;
+    color:black;
 }
 h2{
     margin-bottom: -5px;
@@ -63,7 +64,8 @@ figure {
     box-shadow: 1px 1px 15px grey;
 }
 div.text{
-    width: 50%;    
+    width: 50%;
+    height: 50vh;
     float: left;
     margin: 10px;
     padding: 10px;
@@ -100,10 +102,10 @@ nav li {
     float: left;
 }
 nav li a {
-    color: white;
+    color: brown;
     text-align: center;
     font-size: 20px;
-    padding: 50px 50px;
+    padding: 50px 20px;
     text-decoration: none;
 }
 
@@ -112,12 +114,7 @@ li a:hover {
     background-color: rgb(232, 187, 76);
     color: white;
 }
-a:link {
-    color: brown;
-}
-a:visited {
-    color: brown;
-}
+
 a:hover {
     color: wheat;
 }
@@ -153,3 +150,21 @@ term-exp:hover {
 }
 
 iframe { border: none; }
+
+.button{
+    border: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: rgb(255, 223, 123);
+    color: black;
+    border-radius: 5px;
+}
+.text>hr{
+    margin: 20px 0;
+}
